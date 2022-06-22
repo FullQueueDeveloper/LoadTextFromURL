@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D353287C2863A2A10034AD60 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353287B2863A2A10034AD60 /* Tests_iOS.swift */; };
-		D353287E2863A2A10034AD60 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353287D2863A2A10034AD60 /* Tests_iOSLaunchTests.swift */; };
-		D35328882863A2A10034AD60 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35328872863A2A10034AD60 /* Tests_macOS.swift */; };
-		D353288A2863A2A10034AD60 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35328892863A2A10034AD60 /* Tests_macOSLaunchTests.swift */; };
 		D353288B2863A2A10034AD60 /* nmbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35328632863A2A00034AD60 /* nmbApp.swift */; };
 		D353288C2863A2A10034AD60 /* nmbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35328632863A2A00034AD60 /* nmbApp.swift */; };
 		D353288D2863A2A10034AD60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35328642863A2A00034AD60 /* ContentView.swift */; };
@@ -44,11 +40,7 @@
 		D35328702863A2A10034AD60 /* nmb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nmb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35328722863A2A10034AD60 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D35328772863A2A10034AD60 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D353287B2863A2A10034AD60 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		D353287D2863A2A10034AD60 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		D35328832863A2A10034AD60 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D35328872863A2A10034AD60 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		D35328892863A2A10034AD60 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +80,6 @@
 			children = (
 				D35328622863A2A00034AD60 /* Shared */,
 				D35328712863A2A10034AD60 /* macOS */,
-				D353287A2863A2A10034AD60 /* Tests iOS */,
-				D35328862863A2A10034AD60 /* Tests macOS */,
 				D353286B2863A2A10034AD60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,24 +111,6 @@
 				D35328722863A2A10034AD60 /* macOS.entitlements */,
 			);
 			path = macOS;
-			sourceTree = "<group>";
-		};
-		D353287A2863A2A10034AD60 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D353287B2863A2A10034AD60 /* Tests_iOS.swift */,
-				D353287D2863A2A10034AD60 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		D35328862863A2A10034AD60 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				D35328872863A2A10034AD60 /* Tests_macOS.swift */,
-				D35328892863A2A10034AD60 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D353287E2863A2A10034AD60 /* Tests_iOSLaunchTests.swift in Sources */,
-				D353287C2863A2A10034AD60 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D353288A2863A2A10034AD60 /* Tests_macOSLaunchTests.swift in Sources */,
-				D35328882863A2A10034AD60 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
