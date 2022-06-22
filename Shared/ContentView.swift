@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var text: String = "Loading..."
+  @State
+  var text: String = "Loading..."
+
   var body: some View {
     Text(text)
       .padding()
@@ -19,9 +21,15 @@ struct ContentView: View {
 
   func loadTextFile() {
     Task {
-      let (data, _) = try await URLSession.shared.data(for: URLRequest(url: URL(string: "https://www.tomorrow.io/weather-api/")!))
-      let string = String(data: data, encoding: .utf8)
-      self.text = string ?? "error"
+      do {
+        let url = URL(string: "https://www.tomorrow.io/weather-api/")!
+        let request = URLRequest(url: url)
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let string = String(data: data, encoding: .utf8)
+        self.text = string ?? "error"
+      } catch {
+        text = error.localizedDescription
+      }
     }
   }
 }
